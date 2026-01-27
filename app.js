@@ -9,6 +9,11 @@ app.use(express.json());
 const SCADA_API_KEY = "sk_scada_prod_a1b2c3d4e5f6g7h8i9j0";
 const PLC_PASSWORD = "Siemens_PLC_Admin_2024!";
 const AWS_SECRET = "aws_secret_key_AKIAIOSFODNN7EXAMPLE";
+// Additional API keys for testing
+const GITHUB_TOKEN = "ghp_16C7e42F292c6912E7710c838347Ae178B4a";
+const STRIPE_SECRET = "sk_live_4eC39HqLyjWDarjtT1zdp7dc";
+const SLACK_WEBHOOK = "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX";
+const OPENAI_KEY = "sk-proj-1234567890abcdefghijklmnopqrstuvwxyz1234567890";
 
 // ⚠️ SQL Injection - Vulnerable equipment lookup
 app.get('/equipment/:id', (req, res) => {
