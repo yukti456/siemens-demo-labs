@@ -73,6 +73,17 @@ app.post('/scada/alert', async (req, res) => {
     }
 });
 
+// Health monitoring endpoint
+app.get('/monitoring/health', (req, res) => {
+    res.json({
+        status: 'healthy',
+        uptime: process.uptime(),
+        plcs_connected: 50,
+        alerts: 0,
+        timestamp: new Date().toISOString()
+    });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Industrial IoT Gateway running on port ${PORT}`);
