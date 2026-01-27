@@ -1,0 +1,15 @@
+{
+  "name": "siemens-demo-labs",
+  "version": "1.0.0",
+  "description": "Industrial IoT Edge Gateway - Security Demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Running tests...\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.19",
+    "axios": "^0.21.1"
+  }
+}
