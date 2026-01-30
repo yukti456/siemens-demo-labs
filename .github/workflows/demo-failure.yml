@@ -1,4 +1,4 @@
-name: Demo Failure (Intentional)
+name: Demo Failure 
 
 on:
   workflow_dispatch:
@@ -7,5 +7,5 @@ jobs:
   fail_on_purpose:
     runs-on: ubuntu-latest
     steps:
-      - name: Intentional failure (demo only)
+      - name: Demo failure
         run: exit 1
