@@ -84,6 +84,9 @@ app.get('/monitoring/health', (req, res) => {
     });
 });
 
+// Added basic logging for health check
+console.log("Health check invoked");
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Industrial IoT Gateway running on port ${PORT}`);
